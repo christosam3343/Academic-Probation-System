@@ -1,0 +1,374 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #101010;
+}
+
+#video-background {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+}
+
+#logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#logo {
+  float: left;
+  width: 100px;
+}
+
+#title {
+  color: #181855;
+  /* Dark blue title */
+  text-align: center;
+  font-size: 50px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 5px;
+  font-weight: 800;
+}
+
+#university-name {
+  text-align: center;
+}
+
+#university-name > * {
+  font-size: 20px;
+  padding: 0;
+  padding: 0;
+  margin: 0;
+  color: #181855;
+}
+
+#title1 {
+  font-size: 27px;
+  margin: 0;
+  padding: 0;
+}
+
+.yrgpa {
+  margin: 0;
+  padding: 0;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+#header {
+  background-color: transparent;
+  height: 10vh; 
+  padding: 20px;
+  text-align: center;
+}
+
+.glass {
+  margin: 10px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  padding: 10px;
+}
+
+#logo {
+  width: 100px;
+}
+
+#sidebar_div,
+#table_div,
+#analytics_div {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  font-size: 16px;
+}
+
+#body_div {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  margin: 20px;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+/*---------------------------Sidebar Div---------*/
+#sidebar_div {
+  white-space: nowrap;
+  padding-left: 2%;
+  width: 17%;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 10px;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.2)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0);
+}
+
+#sort_title,
+#filter_title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+#sort_help,
+#filter_help {
+  font-size: 12px;
+  margin-top: 0%;
+  margin-bottom: 10px;
+}
+
+#sort_select {
+  background-color: transparent;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.3);
+  height: 26px;
+}
+
+#filter_text {
+  width: 55px;
+  background-color: transparent;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.2);
+  height: 22px;
+  margin-left: 5px;
+  margin-right: 3px
+}
+
+#filter_bttn_div {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+#filter_dropdown {
+  width: 95px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  background: rgba(0, 0, 0, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  border-style: solid;
+  height: 26px;
+}
+
+#filter_sort_bttn {
+  font-size: 14px;
+  background-color: transparent;
+  background: rgba(64, 120, 65, 0.4);
+  opacity: 100%;
+  border: 1px solid black;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  text-align: center;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.4);
+  height: 30px;
+  width: 90px;
+}
+
+#reset_bttn {
+  font-size: 14px;
+  background-color: transparent;
+  background: rgba(120, 59, 59, 0.6);
+  opacity: 100%;
+  border: 1px solid black;
+  color: rgb(231, 231, 231);
+  cursor: pointer;
+  text-align: center;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.3);
+  height: 30px;
+  width: 90px;
+}
+
+#sort_title {
+  font-weight: bold;
+}
+
+#filter_title {
+  font-weight: bold;
+}
+
+#filter_sort_bttn:hover {
+  background-color: #456ea0;
+}
+
+
+
+
+
+
+/*---------------------------Table Div-----------*/
+#table_div {
+  width: 50%;
+  background-color: transparent;
+  border-radius: 10px;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.2)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: transparent;
+  color: rgb(25, 25, 25);
+  padding: 10px;
+  font-size: 18px;
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: transparent;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+tr:nth-child(odd) {
+  /* Odd rows */
+  background-color: transparent;
+}
+
+/*-----------------------------Analytics Div------------*/
+#analytics_div {
+  width: 28%;
+  background-color: transparent;
+  border-radius: 10px;
+  /* Add padding */
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.2)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0);
+}
+
+#analytics_help{
+  font-size: 13px;
+  margin-bottom:25px;
+  margin-top:0%
+}
+
+#analytics_title {
+  width: 100%;
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-bottom: 0%;
+  font-size: 19px;
+}
+
+#colChart{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: end;
+  width: 100%;
+  height: 200px
+}
+
+#sem1Bar{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  background-color: transparent;
+  background: rgba(111, 158, 93, 0.7);
+  width: 80px;
+  height: 25%;
+  margin-left: 15%;
+  padding-top: 5px;
+  transition: height 1s ease;
+}
+
+#sem2Bar{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  background-color: transparent;
+  background: rgba(95, 107, 158, 0.7);
+  width: 80px;
+  height: 65%;
+  margin-right: 15%;
+  padding-top: 5px;
+  transition: height 1s ease;
+}
+
+#colLegend{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  width: 100%;
+  font-weight: 500;
+}
+
+#sem1Title{
+  margin-left: 15%;
+}
+
+#sem2Title{
+  margin-right: 15%;
+}
+
+#analytics_summary{
+  font-size: 18px;
+  margin-bottom:25px;
+  margin-top:0%
+}
